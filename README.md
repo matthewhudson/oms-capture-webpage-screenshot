@@ -47,3 +47,12 @@ yarn run commit
 ✔ Ran action: `message` with output: {"message":"Hello Service"}
 ✔ Stopped Docker container: 1c8a91688261
 ```
+
+docker run -d -it -p 80:8080
+
+```sh
+docker build . -t matthewhudson/oms-nodejs-app
+docker run -p 49162:8080 -d e93a6b4e5d68 # matthewhudson/oms-nodejs-app
+docker logs 4801a1874b29aae8dc4f48587535eedf3d227d3d4d284f84d237cff52cf3f931
+docker push matthewhudson/oms-nodejs-app
+```
