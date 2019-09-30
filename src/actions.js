@@ -68,6 +68,7 @@ async function getScreenshot ({
     }
   }
 }
+
 const actionHandler = async ({ fullPage, quality, type = 'png', url }) => {
   return new Promise((resolve, reject) => {
     try {
